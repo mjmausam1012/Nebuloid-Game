@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+.mm-start-app {
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f4;
+  font-family: Inter, system-ui, sans-serif;
+  color: #111;
+}
+
+.mm-start-app button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.mm-screen {
+  min-height: 100%;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.mm-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 85px;
+  padding-bottom: 40px;
+}
+
+.mm-hero {
+  text-align: center;
+  margin-top: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.mm-hero h1 {
+  font-size: clamp(64px, 11vw, 120px);
+  line-height: 0.9;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+
+.mm-hero h2 {
+  font-size: 34px;
+  letter-spacing: 15px;
+  margin: 12px 0 24px 10px;
+  font-weight: 700;
+}
+
+.mm-hero-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.mm-hero-rule span {
+  width: 58px;
+  height: 2px;
+  background: #111;
+}
+
+.mm-menu {
+  width: min(560px, calc(100% - 40px));
+  display: grid;
+  gap: 13px;
+  margin-top: 34px;
+  position: relative;
+  z-index: 1;
+}
+
+.mm-menu-btn {
+  height: 66px;
+  border: 1.5px solid #111;
+  border-radius: 11px;
+  background: #f6f6f4;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 64px;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 1.2px;
+  transition: 0.15s;
+  text-align: center;
+}
+
+.mm-menu-btn:hover {
+  transform: translateY(-1px);
+  background: #eee;
+}
+
+.mm-menu-btn.primary {
+  background: #0b0b0b;
+  color: white;
+}
+
+.mm-menu-btn.primary:hover {
+  background: #222;
+}
+
+.mm-btn-icon {
+  position: absolute;
+  left: 26px;
+  width: 30px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.mm-bottom-note {
+  font-size: 12px;
+  color: #555;
+  margin: 30px 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.mm-corner {
+  position: absolute;
+  z-index: 0;
+  width: 155px;
+  height: 155px;
+  overflow: hidden;
+}
+
+.mm-corner-tl {
+  top: 0;
+  left: 0;
+  background: #111;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.mm-corner-br {
+  right: 0;
+  bottom: 0;
+  background: #111;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.mm-corner i {
+  position: absolute;
+  width: 95px;
+  height: 3px;
+  background: #f6f6f4;
+  transform: rotate(-45deg);
+}
+
+.mm-corner-tl i:nth-child(1) {
+  top: 33px;
+  left: -20px;
+}
+
+.mm-corner-tl i:nth-child(2) {
+  top: 50px;
+  left: -12px;
+}
+
+.mm-corner-tl i:nth-child(3) {
+  top: 67px;
+  left: -4px;
+}
+
+.mm-corner-tl i:nth-child(4) {
+  top: 84px;
+  left: 4px;
+}
+
+.mm-corner-br i {
+  bottom: 33px;
+  right: -20px;
+}
+
+.mm-corner-br i:nth-child(2) {
+  bottom: 50px;
+  right: -12px;
+}
+
+.mm-corner-br i:nth-child(3) {
+  bottom: 67px;
+  right: -4px;
+}
+
+.mm-corner-br i:nth-child(4) {
+  bottom: 84px;
+  right: 4px;
+}
+
+.mm-dots {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 4px);
+  gap: 12px;
+  z-index: 0;
+}
+
+.mm-dots b {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #111;
+}
+
+.mm-dots-tr {
+  right: 60px;
+  top: 65px;
+}
+
+.mm-dots-bl {
+  left: 60px;
+  bottom: 55px;
+}
+
+.mm-subpage {
+  display: grid;
+  place-items: center;
+  padding: 50px 20px;
+}
+
+.mm-panel {
+  width: min(700px, 100%);
+  background: #fff;
+  border: 1px solid #d7d7d4;
+  border-radius: 18px;
+  padding: 44px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 1;
+}
+
+.mm-panel.wide {
+  width: min(860px, 100%);
+}
+
+.mm-panel h1 {
+  font-size: 42px;
+  margin: 6px 0 8px;
+  letter-spacing: -1.5px;
+}
+
+.mm-eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+.mm-steps {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mm-steps > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  column-gap: 14px;
+  border: 1px solid #ddd;
+  border-radius: 11px;
+  padding: 17px;
+}
+
+.mm-steps b {
+  grid-row: span 2;
+  font-size: 12px;
+  color: #777;
+}
+
+.mm-steps strong {
+  font-size: 15px;
+}
+
+.mm-steps span {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.mm-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.mm-actions .mm-menu-btn {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .mm-welcome {
+    padding-top: 45px;
+  }
+
+  .mm-hero h1 {
+    font-size: clamp(48px, 14vw, 72px);
+    letter-spacing: -2px;
+  }
+
+  .mm-hero h2 {
+    font-size: 22px;
+    letter-spacing: 10px;
+    margin-left: 8px;
+  }
+
+  .mm-hero-rule {
+    font-size: 11px;
+    letter-spacing: 2px;
+    gap: 10px;
+  }
+
+  .mm-hero-rule span {
+    width: 36px;
+  }
+
+  .mm-menu {
+    width: min(560px, calc(100% - 28px));
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .mm-menu-btn {
+    height: 56px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0 48px;
+  }
+
+  .mm-btn-icon {
+    left: 18px;
+    font-size: 16px;
+  }
+
+  .mm-panel {
+    padding: 28px;
+  }
+
+  .mm-panel h1 {
+    font-size: 32px;
+  }
+
+  .mm-actions {
+    flex-direction: column;
+  }
+
+  .mm-corner {
+    width: 110px;
+    height: 110px;
+  }
+
+  .mm-dots-tr {
+    right: 28px;
+    top: 40px;
+  }
+
+  .mm-dots-bl {
+    left: 28px;
+    bottom: 36px;
+  }
+}

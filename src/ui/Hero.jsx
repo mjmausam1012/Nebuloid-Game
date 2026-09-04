@@ -4,7 +4,7 @@ import hero from "../assets/hero-images.png";
 const Hero = ({ onShowGames }) => {
   return (
     <div className="w-full min-h-[calc(100vh-120px)] flex items-center justify-center bg-white px-6 py-12 md:py-20 font-sans mt-8">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+      <div className="max-w-7xl mx-auto flex md:flex-row items-center gap-12 lg:gap-20">
         {/* Left Side: Image */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
           <div className="relative group">
